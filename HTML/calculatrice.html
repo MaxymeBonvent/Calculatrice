@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="../CSS/calculatrice.css">
+
+</head>
+<body>
+
+    <h1>Calculatrice</h1>
+
+    <!-- CORPS -->
+    <div id="corps">
+
+        <!-- ÉCRAN -->
+        <input type="text" id="écran">
+
+        <!-- LIGNE 1-2-3-+ -->
+        <div class="ligne">
+
+            <button onclick="Chiffre(0)">1</button>
+            <button onclick="Chiffre(1)">2</button>
+            <button onclick="Chiffre(2)">3</button>
+            <button onclick="Opérateur('+')">+</button>
+
+        </div>
+
+        <!-- LIGNE 4-5-6-[-] -->
+        <div class="ligne">
+
+            <button onclick="Chiffre(4)">4</button>
+            <button onclick="Chiffre(5)">5</button>
+            <button onclick="Chiffre(6)">6</button>
+            <button onclick="Opérateur('-')">-</button>
+
+        </div>
+
+        <!-- LIGNE 7-8-9-* -->
+        <div class="ligne">
+
+            <button onclick="Chiffre(8)">7</button>
+            <button onclick="Chiffre(9)">8</button>
+            <button onclick="Chiffre(10)">9</button>
+            <button onclick="Opérateur('*')">*</button>
+
+        </div>
+
+        <!-- LIGNE .-0-=-/ -->
+        <div class="ligne">
+
+            <button onclick="Chiffre(12)">.</button>
+            <button onclick="Chiffre(13)">0</button>
+            <button onclick="Calcul()">&equals;</button>
+            <button onclick="Opérateur('/')">/</button>
+
+        </div>
+
+        <!-- LIGNE [<-]-C-x²-sqrt(x) -->
+        <div class="ligne">
+
+            <button onclick="SupprDernierCaractère()">&lt;-</button>
+            <button onclick="Cancel()">C</button>
+            <button onclick="Carré()">x²</button>
+            <button onclick="RacineCarré()">&Sqrt;x</button>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../JavaScript/calculatrice.js"></script>
+
+</body>
+</html>
