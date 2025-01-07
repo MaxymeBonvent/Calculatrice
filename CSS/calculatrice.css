@@ -7,7 +7,7 @@ body{
 }
 
 #corps{
-    background-color: dodgerblue;
+    background-color: rgb(0, 80, 200);
     height: 400px;
 
     border: 2px solid black;
